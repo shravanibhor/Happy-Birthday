@@ -22,7 +22,23 @@
     Yours Shravani
     </p>
     
-    
+    <style>
+      main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; /* Adjust the gap as necessary */
+      }
+      main img {
+        width: 100%;
+      }
+      main img:nth-child(4),
+      main img:nth-child(5) {
+        grid-column: span 1;
+      }
+      main img:nth-child(6) {
+        grid-column: span 3;
+      }
+    </style>
     
     <main> 
       <img src="https://i.ibb.co/p3VgzTr/a.jpg">
@@ -30,7 +46,6 @@
       <img src="https://i.ibb.co/h2TRvyN/c.jpg">
       <img src="https://i.ibb.co/5T85JRn/d.jpg">
       <img src="https://i.ibb.co/tXWW5mg/e.jpg">
-    
     </main>
   </div>
 
