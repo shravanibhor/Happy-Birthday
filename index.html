@@ -5,15 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px; /* Adjust the gap as necessary */
+    }
+    main img {
+      width: 100%;
+    }
+    main img:nth-child(4),
+    main img:nth-child(5) {
+      grid-column: span 1;
+    }
+    main img:nth-child(4),
+    main img:nth-child(5) {
+      margin: 0 auto; /* Center the images in their columns */
+    }
+  </style>
 </head>
 
 <body>
   <canvas id="canvas"></canvas>
   <div class="main-content">
-    <div>
-      <h1>Happy Birthday Papa!</h1>
-      <button id="confettiButton">Click for surprise</button>
-    </div>
+    <h1>Happy Birthday Papa!</h1>
+    <button id="confettiButton">Click for surprise</button>
     
     <p class="sentence">
       Wishing you a very happy birthday! Instead of a normal greeting card which u mustve expected as always, I've created a special digital one just for you. This website is my little project. You can see it anywhere at anytime. Hope you like this special idea of mine.
@@ -21,24 +50,6 @@
     <p class="sentence">
     Yours Shravani
     </p>
-    
-    <style>
-      main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px; /* Adjust the gap as necessary */
-      }
-      main img {
-        width: 100%;
-      }
-      main img:nth-child(4),
-      main img:nth-child(5) {
-        grid-column: span 1;
-      }
-      main img:nth-child(6) {
-        grid-column: span 3;
-      }
-    </style>
     
     <main> 
       <img src="https://i.ibb.co/p3VgzTr/a.jpg">
