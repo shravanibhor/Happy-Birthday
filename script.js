@@ -101,15 +101,20 @@ for (var i = 0; i < maxConfettis; i++) {
 canvas.width = W;
 canvas.height = H;
 
-// Eventlistener für den Button hinzufügen
+// Create and configure the audio element
+const audio = new Audio('\audio\WhatsApp Audio 2024-07-07 at 18.22.01.aac'); 
+audio.preload = 'auto';
+audio.loop = false;
+
+// Event listener for the button
 const confettiButton = document.getElementById("confettiButton");
 
 confettiButton.addEventListener("click", function() {
   Draw();
+  audio.play();
 });
 
 confettiButton.addEventListener("touchstart", function() {
   Draw();
+  audio.play();
 });
-
-

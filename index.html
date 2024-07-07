@@ -23,19 +23,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px; /* Adjust the gap as necessary */
+      width: 90%; /* Add a width to center the grid within the container */
+      margin: 0 auto; /* Center the grid */
     }
     main img {
       width: 100%;
-    }
-    main img:nth-child(4),
-    main img:nth-child(5),
-    main img:nth-child(6) {
-      grid-column: span 1;
-    }
-    main img:nth-child(4),
-    main img:nth-child(5),
-    main img:nth-child(6) {
-      margin: 0 auto; /* Center the images in their columns */
+      height: auto; /* Ensure images maintain aspect ratio */
     }
   </style>
 </head>
@@ -50,16 +43,16 @@
       Wishing you a very happy birthday! Instead of a normal greeting card which u mustve expected as always, I've created a special digital one just for you. This website is my little project. You can see it anywhere at anytime. Hope you like this special idea of mine.
     </p>
     <p class="sentence">
-    Yours Shravani
+      Yours Shravani
     </p>
     
     <main> 
-      <img src="https://i.ibb.co/p3VgzTr/a.jpg">
-      <img src="https://i.ibb.co/BGQBHmp/b.jpg">
-      <img src="https://i.ibb.co/h2TRvyN/c.jpg">
-      <img src="https://i.ibb.co/5T85JRn/d.jpg">
-      <img src="https://i.ibb.co/tXWW5mg/e.jpg">
-      <img src="https://i.ibb.co/Mkq0ZRb/f.jpg">
+      <img src="https://i.ibb.co/p3VgzTr/a.jpg" alt="Image 1">
+      <img src="https://i.ibb.co/BGQBHmp/b.jpg" alt="Image 2">
+      <img src="https://i.ibb.co/h2TRvyN/c.jpg" alt="Image 3">
+      <img src="https://i.ibb.co/5T85JRn/d.jpg" alt="Image 4">
+      <img src="https://i.ibb.co/tXWW5mg/e.jpg" alt="Image 5">
+      <img src="https://i.ibb.co/Mkq0ZRb/f.jpg" alt="Image 6">
     </main>
   </div>
 
