@@ -102,7 +102,7 @@ canvas.width = W;
 canvas.height = H;
 
 // Create and configure the audio element
-const audio = new Audio('https://drive.google.com/file/d/1if4e-8dDYgcrzSZuwv5EW1BpoF-Ciosg/view?usp=sharing'); 
+const audio = new Audio('https://drive.google.com/uc?export=download&id=1if4e-8dDYgcrzSZuwv5EW1BpoF-Ciosg'); 
 audio.preload = 'auto';
 audio.loop = false;
 
