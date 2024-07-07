@@ -106,15 +106,23 @@ const audio = new Audio('https://drive.google.com/uc?export=download&id=1if4e-8d
 audio.preload = 'auto';
 audio.loop = false;
 
+audio.addEventListener('canplaythrough', function() {
+  console.log('Audio can play through');
+});
+
+audio.addEventListener('error', function(e) {
+  console.error('Audio error', e);
+});
+
 // Event listener for the button
 const confettiButton = document.getElementById("confettiButton");
 
 confettiButton.addEventListener("click", function() {
   Draw();
-  audio.play();
+  audio.play().catch(e => console.error('Audio play error', e));
 });
 
 confettiButton.addEventListener("touchstart", function() {
   Draw();
-  audio.play();
+  audio.play().catch(e => console.error('Audio play error', e));
 });
